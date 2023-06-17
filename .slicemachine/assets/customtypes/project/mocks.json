@@ -1,0 +1,26 @@
+{
+  "id": "8b0d6047-0585-4626-b2b4-b180f3aef198",
+  "uid": "inventore-in-facere",
+  "type": "project",
+  "data": {
+    "name": "morph innovative eyeballs",
+    "title": "productize magnetic e-tailers",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Ipsum irure dolor incididunt consectetur aliquip enim eu consectetur laboris.",
+        "spans": []
+      }
+    ],
+    "order": "target turn-key methodologies"
+  }
+}
