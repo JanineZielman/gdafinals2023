@@ -37,17 +37,17 @@ h1{
 }
 
 .menu{
-  padding: 5px 10px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   width: calc(100% - 20px);
   position: fixed;
   z-index: 999;
-  background-color: #cafbd9;
+  background-color: #fff;
   top: 0;
   .logo{
     img{
-      height: 53px;
+      height: 100px;
       width: auto;
     }
   }

@@ -6,7 +6,7 @@ import { createClient } from "../prismicio";
 import { Layout } from "../components/Layout";
 
 
-const Index = ({ projects, navigation, settings, index }) => {
+const Index = ({ projects, settings, index }) => {
   console.log(projects)
   const [elements, setElements] = useState(0);
   const inputEl = useRef(null);
@@ -31,10 +31,10 @@ const Index = ({ projects, navigation, settings, index }) => {
   });
 
   useEffect(() => {
-    var rand = Math.floor( Math.random() * 28 )
+    var rand = Math.floor( Math.random() * 3 )
     slider.current.slickGoTo(rand);
     window.setInterval(function(){
-      var rand = Math.floor( Math.random() * 28 )
+      var rand = Math.floor( Math.random() * 3 )
       slider.current.slickGoTo(rand);
     }, 30000);
   }, [])
@@ -86,7 +86,6 @@ const Index = ({ projects, navigation, settings, index }) => {
 
   return (
     <Layout
-      navigation={navigation}
       settings={settings}
     >
       <div className="scroll"> </div>
@@ -165,14 +164,12 @@ export async function getStaticProps({ previewData }) {
     },
   });
   const index = await client.getByUID('page', 'index');
-  const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
 
   return {
     props: {
       projects,
       index,
-      navigation,
       settings,
     },
   };
