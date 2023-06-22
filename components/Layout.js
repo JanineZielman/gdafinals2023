@@ -1,5 +1,4 @@
 import { Footer } from "./Footer";
-import {RichText} from 'prismic-reactjs';
 
 export const Layout = ({
   settings,
