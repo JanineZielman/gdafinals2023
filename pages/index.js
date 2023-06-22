@@ -12,9 +12,6 @@ const Index = ({ projects, settings, index }) => {
   const slider = useRef('');
 
 
-  const orderEl = useRef(null);
-
-
   useEffect(() => {
     var rand = Math.floor( Math.random() * 3 )
     slider.current.slickGoTo(rand);
@@ -33,7 +30,7 @@ const Index = ({ projects, settings, index }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '28%',
+    centerPadding: '30%',
     responsive: [
       {
         breakpoint: 900,
@@ -55,7 +52,7 @@ const Index = ({ projects, settings, index }) => {
       settings={settings}
     >
       <div className="scroll"> </div>
-        <div className="hero"  ref={orderEl}>
+        <div className="hero">
           <Slider {...settingsSlider} ref={slider}>
             {projects.map((item, i) => {
               return(
@@ -80,7 +77,7 @@ const Index = ({ projects, settings, index }) => {
               return(
                 <div className="index-item" id={item.order} key={'index-item' + i}>
                     <div className="order">
-                      <img src="/narratives.svg"/>
+                      <img src={item.icon?.url}/>
                     </div>
                     <div className="info">
                       <div>{item.name.toUpperCase()}</div>

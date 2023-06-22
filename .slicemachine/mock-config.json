@@ -106,7 +106,8 @@
     },
     "IndexItem": {
       "default": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       }
     }
   }

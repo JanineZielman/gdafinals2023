@@ -1,10 +1,8 @@
 {
-  "id": "8b0d6047-0585-4626-b2b4-b180f3aef198",
-  "uid": "inventore-in-facere",
+  "id": "6a052aee-47ab-4417-9516-744256f78abb",
+  "uid": "nulla-est-ullam",
   "type": "project",
   "data": {
-    "name": "morph innovative eyeballs",
-    "title": "productize magnetic e-tailers",
     "image": {
       "dimensions": {
         "width": 900,
@@ -12,15 +10,15 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
     },
     "description": [
       {
         "type": "paragraph",
-        "text": "Ipsum irure dolor incididunt consectetur aliquip enim eu consectetur laboris.",
+        "text": "Irure labore laborum cupidatat Lorem. Id sunt laborum qui ad est nulla eu dolore.",
         "spans": []
       }
     ],
-    "order": "target turn-key methodologies"
+    "order": "revolutionize turn-key interfaces"
   }
 }

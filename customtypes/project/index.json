@@ -12,20 +12,6 @@
           "placeholder": ""
         }
       },
-      "name": {
-        "type": "Text",
-        "config": {
-          "label": "Name",
-          "placeholder": ""
-        }
-      },
-      "title": {
-        "type": "Text",
-        "config": {
-          "label": "Title",
-          "placeholder": ""
-        }
-      },
       "image": {
         "type": "Image",
         "config": {
