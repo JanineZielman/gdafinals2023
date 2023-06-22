@@ -131,6 +131,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid black;
+    padding-top: 24px;
     .index-item{
       width: 33%;
       display: flex;
@@ -138,8 +139,13 @@ h1{
       padding: 14px 0;
       .order{
         width: 25%;
-        display: flex;
-        align-items: flex-end;
+        height: 60px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+        }        
       }
       .info{
         display: block;
