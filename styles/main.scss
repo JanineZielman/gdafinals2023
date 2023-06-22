@@ -122,7 +122,7 @@ h1{
 .index{
   min-height: 100vh;
   margin-left: 10px;
-  border-top: 1px solid black;
+  margin-top: 24px;
   .title{
     font-size: 45px;
     // text-transform: uppercase;
@@ -130,24 +130,16 @@ h1{
   .list{
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid black;
     .index-item{
       width: 33%;
       display: flex;
+      align-items: center;
       padding: 14px 0;
       .order{
-        font-size: 30px;
-        padding: 14px;
-        width: 15%;
+        width: 25%;
         display: flex;
         align-items: flex-end;
-        div{
-          &:nth-child(2){
-            font-family: Cirrus;
-            margin-bottom: -5px;
-            -webkit-text-stroke: 1.5px black;
-            // font-size: 14px;
-          }
-        }
       }
       .info{
         display: block;
@@ -156,12 +148,12 @@ h1{
         word-wrap: break-word;
         div{
           display: block;
-          a{
-            transition: all 0.4s ease-in-out;
-            &:hover{
-              color: #f93822;
-            }
-          }
+          // a{
+          //   transition: all 0.4s ease-in-out;
+          //   &:hover{
+          //     color: #f93822;
+          //   }
+          // }
         }
       }
     }

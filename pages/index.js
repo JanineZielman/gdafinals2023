@@ -38,6 +38,12 @@ const Index = ({ projects, settings, index }) => {
       {
         breakpoint: 900,
         settings: {
+          centerPadding: '20%',
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
           centerPadding: '3%',
         }
       },
@@ -74,14 +80,10 @@ const Index = ({ projects, settings, index }) => {
               return(
                 <div className="index-item" id={item.order} key={'index-item' + i}>
                     <div className="order">
-                      {/* {item.order?.split("").map((elem, index) => {
-                        return(
-                          <div key={'span'+ index}>{elem}</div>
-                        )
-                      })} */}
+                      <img src="/narratives.svg"/>
                     </div>
                     <div className="info">
-                      <div>{item.name}</div>
+                      <div>{item.name.toUpperCase()}</div>
                       <div><a href={`mailto:${item.email}`}>Send email</a></div>
                       {item.website.includes('http://') ? 
                         <div><a target="_blank" rel="noreferrer" href={`${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://','')}</a></div>
