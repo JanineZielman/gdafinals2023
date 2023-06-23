@@ -58,10 +58,12 @@ h1{
 
 .hero{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
+  -webkit-justify-content: center;
   height: calc(100vh - 50px);
-  margin-bottom: 25vh;
+  // margin-bottom: 25vh;
   overflow-y: visible;
   top: 60px;
   position: absolute;
@@ -76,11 +78,15 @@ h1{
 .slick-slider{
   height: calc(100vh - 50px);
   display: flex;
+  display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center;
+  position: relative;
   .slick-slide>div {
     // padding: 0 24px;
-    margin: 0 1.5vw;
+    margin: auto 1.5vw;
     background-color: #F0FF5F;
+    display: inline-flex;
   }
 
   .image{
