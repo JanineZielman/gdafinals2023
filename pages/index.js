@@ -52,7 +52,7 @@ const Index = ({ projects, settings, index }) => {
       settings={settings}
     >
       <div className="scroll"> </div>
-        <div className="hero">
+        <div className="hero" style={{'background-image': `url(${settings.data.backgroundImage.url})`}}>
           <Slider {...settingsSlider} ref={slider}>
             {projects.map((item, i) => {
               return(

@@ -14,42 +14,12 @@
           "single": "heading1"
         }
       },
-      "description": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Description",
-          "placeholder": "Short description of your blog",
-          "allowTargetBlank": false,
-          "single": "paragraph"
-        }
-      },
-      "profilePicture": {
+      "backgroundImage": {
         "type": "Image",
         "config": {
-          "label": "Profile Picture",
-          "constraint": {
-            "width": 2000,
-            "height": 2000
-          },
+          "label": "Background Image",
+          "constraint": {},
           "thumbnails": []
-        }
-      },
-      "newsletterDescription": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Newsletter Description",
-          "placeholder": "Text above the sign up form",
-          "allowTargetBlank": true,
-          "multi": "heading1,paragraph,strong,em,hyperlink,list-item,o-list-item"
-        }
-      },
-      "newsletterDisclaimer": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Newsletter Disclaimer",
-          "placeholder": "Small text below sign up form",
-          "allowTargetBlank": true,
-          "multi": "paragraph,em,strong,hyperlink"
         }
       }
     }
