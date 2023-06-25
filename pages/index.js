@@ -30,7 +30,7 @@ const Index = ({ projects, settings, index }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '30%',
+    centerPadding: '32%',
     responsive: [
       {
         breakpoint: 900,
@@ -73,7 +73,6 @@ const Index = ({ projects, settings, index }) => {
           <br/><br/><br/>
           <div className="list" ref={inputEl}>
             {index.data.slices[0].items.map((item, i) => {
-              console.log(item.website.includes('http://'))
               return(
                 <div className="index-item" id={item.order} key={'index-item' + i}>
                     <div className="order">
@@ -82,7 +81,7 @@ const Index = ({ projects, settings, index }) => {
                     <div className="info">
                       <div>{item.name.toUpperCase()}</div>
                       <div><a href={`mailto:${item.email}`}>Send email</a></div>
-                      {item.website.includes('http://') ? 
+                      {item.website?.includes('http://') ? 
                         <div><a target="_blank" rel="noreferrer" href={`${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://','')}</a></div>
                       :
                         <div><a target="_blank" rel="noreferrer" href={`https://${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://`','')}</a></div>
