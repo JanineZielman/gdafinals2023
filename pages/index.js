@@ -47,6 +47,8 @@ const Index = ({ projects, settings, index }) => {
     ]
   };
 
+  console.log(index)
+
   return (
     <Layout
       settings={settings}
@@ -72,21 +74,27 @@ const Index = ({ projects, settings, index }) => {
         <div id="index" className="index">
           <br/><br/><br/>
           <div className="list" ref={inputEl}>
-            {index.data.slices[0].items.map((item, i) => {
+            {index.data.slices.map((slice, i) => {
               return(
-                <div className="index-item" id={item.order} key={'index-item' + i}>
-                    <div className="order">
-                      <img src={item.icon?.url}/>
-                    </div>
-                    <div className="info">
-                      <div>{item.name.toUpperCase()}</div>
-                      <div><a href={`mailto:${item.email}`}>Send email</a></div>
-                      {item.website?.includes('http://') ? 
-                        <div><a target="_blank" rel="noreferrer" href={`${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://','')}</a></div>
-                      :
-                        <div><a target="_blank" rel="noreferrer" href={`https://${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://`','')}</a></div>
-                      }
-                    </div>
+                <div className="index-row">
+                  {slice.items.map((item, i) => {
+                    return(
+                      <div className="index-item" id={item.order} key={'index-item' + i}>
+                        <div className="order">
+                          <img src={item.icon?.url}/>
+                        </div>
+                        <div className="info">
+                          <div>{item.name.toUpperCase()}</div>
+                          <div><a href={`mailto:${item.email}`}>Send email</a></div>
+                          {item.website?.includes('http://') ? 
+                            <div><a target="_blank" rel="noreferrer" href={`${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://','')}</a></div>
+                          :
+                            <div><a target="_blank" rel="noreferrer" href={`https://${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://`','')}</a></div>
+                          }
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
               )
             })}
