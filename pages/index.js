@@ -91,6 +91,11 @@ const Index = ({ projects, settings, index }) => {
                           :
                             <div><a target="_blank" rel="noreferrer" href={`https://${item.website}`}>{item.website?.replace('www.instagram.com/', '@').replace('www.','').replace('http://`','')}</a></div>
                           }
+                          {item.social?.includes('http://') ? 
+                            <div><a target="_blank" rel="noreferrer" href={`${item.social}`}>{item.social?.replace('www.instagram.com/', '@').replace('www.','').replace('http://','')}</a></div>
+                          :
+                            <div><a target="_blank" rel="noreferrer" href={`https://${item.social}`}>{item.social?.replace('www.instagram.com/', '@').replace('www.','').replace('http://`','')}</a></div>
+                          }
                         </div>
                       </div>
                     )

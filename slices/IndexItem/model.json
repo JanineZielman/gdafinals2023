@@ -40,6 +40,13 @@
             "placeholder": ""
           }
         },
+        "social": {
+          "type": "Text",
+          "config": {
+            "label": "Social",
+            "placeholder": ""
+          }
+        },
         "icon": {
           "type": "Image",
           "config": {
