@@ -65,7 +65,7 @@ h1{
   height: calc(100vh - 40px);
   // margin-bottom: 25vh;
   overflow-y: visible;
-  top: 60px;
+  top: 40px;
   position: absolute;
   width: 100vw;
   // background-image: url('/Background.svg');
@@ -76,12 +76,15 @@ h1{
 
 
 .slick-slider{
-  height: calc(100vh - 40px);
+  height: calc(100vh - 80px);
   display: flex;
   display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
   position: relative;
+  .slick-list{
+    height: 100%;
+  }
   .slick-slide>div {
     // padding: 0 24px;
     margin: auto 1.5vw;
@@ -223,7 +226,7 @@ h1{
       column-count: 1;
       p{
         margin-bottom: 14px;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
