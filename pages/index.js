@@ -76,7 +76,7 @@ const Index = ({ projects, settings, index }) => {
           <div className="list" ref={inputEl}>
             {index.data.slices.map((slice, i) => {
               return(
-                <div className="index-row">
+                <div className="index-row" key={'slice-item' + i}>
                   {slice.items.map((item, i) => {
                     return(
                       <div className="index-item" id={item.order} key={'index-item' + i}>
