@@ -182,15 +182,15 @@ h1{
   display: none;
 }
 
-@media only screen and (min-height: 900px) {
-  .menu{
-    .logo{
-      img{
-        height: 10vh;
-      }
-    }
-  }
-}
+// @media only screen and (min-height: 900px) {
+//   .menu{
+//     .logo{
+//       img{
+//         height: 10vh;
+//       }
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 1100px) {
   .index  .list .index-row {
