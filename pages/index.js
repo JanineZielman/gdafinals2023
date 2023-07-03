@@ -7,13 +7,12 @@ import { Layout } from "../components/Layout";
 
 
 const Index = ({ projects, settings, index }) => {
-  console.log(projects)
   const inputEl = useRef(null);
   const slider = useRef('');
 
 
   useEffect(() => {
-    var rand = Math.floor( Math.random() * 3 )
+    var rand = Math.floor( Math.random() * projects.length )
     slider.current.slickGoTo(rand);
     // window.setInterval(function(){
     //   var rand = Math.floor( Math.random() * 3 )
