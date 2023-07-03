@@ -15,10 +15,10 @@ const Index = ({ projects, settings, index }) => {
   useEffect(() => {
     var rand = Math.floor( Math.random() * 3 )
     slider.current.slickGoTo(rand);
-    window.setInterval(function(){
-      var rand = Math.floor( Math.random() * 3 )
-      slider.current.slickGoTo(rand);
-    }, 30000);
+    // window.setInterval(function(){
+    //   var rand = Math.floor( Math.random() * 3 )
+    //   slider.current.slickGoTo(rand);
+    // }, 30000);
   }, [])
 
 
